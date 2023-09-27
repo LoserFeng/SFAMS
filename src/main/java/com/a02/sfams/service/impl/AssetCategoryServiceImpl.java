@@ -18,6 +18,11 @@ public class AssetCategoryServiceImpl implements AssetCategoryService {
 
     @Autowired
     private AssetCategoryMapper assetCategoryMapper;
+
+    /**
+     * 获取资产分类列表
+     * @return Result
+     */
     @Override
     public Result getAssetCategoryList() {
         Map<String, Object> resultMap=new HashMap<>();
