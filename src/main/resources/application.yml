@@ -1,0 +1,16 @@
+spring:
+  datasource:
+    driver-class-name: com.mysql.jdbc.Driver
+    url: jdbc:mysql://127.0.0.1:3306/sfams?serverTimezone=Asia/Shanghai&allowMultiQueries=true
+    username: root
+    password: 110900fyf
+    type: com.alibaba.druid.pool.DruidDataSource
+
+mybatis-plus:
+  configuration:
+    log-impl: org.apache.ibatis.logging.stdout.StdOutImpl
+
+#  global-config:
+#    db-config:
+#      update-strategy: ignored  #字段策略 0:"忽略判断",1:"非 NULL 判断",2:"非空判断"
+

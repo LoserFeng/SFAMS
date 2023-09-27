@@ -1,6 +1,6 @@
 package com.a02.sfams.controller;
 
-import com.a02.sfams.pojo.User;
+import com.a02.sfams.entity.User;
 import org.springframework.web.bind.annotation.*;
 
 @RestController

@@ -2,6 +2,7 @@ package com.a02.sfams.config;
 
 
 
+import io.swagger.annotations.ApiOperation;
 import org.springframework.context.annotation.Bean;
 import org.springframework.context.annotation.Configuration;
 import springfox.documentation.builders.ApiInfoBuilder;
@@ -24,6 +25,7 @@ public Docket createAdminDocket()
             .apiInfo(adminInfo())
             .enable(true)
             .select()
+//            .apis(RequestHandlerSelectors.withMethodAnnotation(ApiOperation.class))
             .apis(RequestHandlerSelectors.basePackage("com.a02.sfams.controller"))
             .paths(PathSelectors.any())
             .build();
